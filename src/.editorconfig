@@ -1,0 +1,20 @@
+
+[*]
+
+# Microsoft .NET properties
+csharp_preferred_modifier_order = public, protected, private, internal, file, new, static, abstract, virtual, sealed, override, readonly, extern, unsafe, volatile, async, required:suggestion
+csharp_style_namespace_declarations = block_scoped:suggestion
+
+# ReSharper properties
+resharper_blank_lines_after_control_transfer_statements = 1
+resharper_csharp_blank_lines_around_invocable = 0
+resharper_csharp_blank_lines_around_single_line_field = 1
+resharper_csharp_insert_final_newline = true
+resharper_instance_members_qualify_declared_in = base_class
+resharper_place_simple_embedded_statement_on_same_line = false
+
+[*.{csproj}]
+
+charset = utf-8-bom
+end_of_line = crlf
+indent_size = 2
