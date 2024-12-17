@@ -3,7 +3,7 @@ using System.Threading.Channels;
 using ICSharpCode.Decompiler;
 using ICSharpCode.Decompiler.CSharp;
 
-namespace MakeListToNgen.Utils
+namespace ListToNgen.Utils
 {
     internal static class CSharpDecompilerUtils
     {
@@ -38,7 +38,7 @@ namespace MakeListToNgen.Utils
                 }
 
             }
-            catch (ICSharpCode.Decompiler.Metadata.PEFileNotSupportedException ex)
+            catch (ICSharpCode.Decompiler.Metadata.PEFileNotSupportedException)
             {
                 //simple skip
             }

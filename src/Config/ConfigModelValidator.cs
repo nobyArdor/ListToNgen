@@ -1,6 +1,6 @@
 ﻿using System.Collections.Frozen;
 
-namespace MakeListToNgen.Config
+namespace ListToNgen.Config
 {
     internal static class ConfigModelValidator
     {

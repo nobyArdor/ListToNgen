@@ -2,10 +2,10 @@
 using System.CommandLine;
 using System.Text;
 using System.Threading.Channels;
-using MakeListToNgen.Config;
-using MakeListToNgen.Utils;
+using ListToNgen.Config;
+using ListToNgen.Utils;
 
-namespace MakeListToNgen
+namespace ListToNgen
 {
     internal static class RootCommandBuilder
     {

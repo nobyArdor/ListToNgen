@@ -1,6 +1,6 @@
 ﻿using System.CommandLine;
 
-namespace MakeListToNgen
+namespace ListToNgen
 {
     internal static class Program
     {

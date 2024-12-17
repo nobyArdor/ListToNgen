@@ -1,14 +1,9 @@
-﻿namespace MakeListToNgen.Config
+﻿namespace ListToNgen.Config
 {
     [Serializable]
-    internal class ConfigModel
+    internal sealed class ConfigModel
     {
-        public ConfigModel()
-        {
-            SkipDotnetVersions = [];
-            NgenDotnetVersions = [];
-        }
-        public string[] SkipDotnetVersions { get; set; }
-        public string[] NgenDotnetVersions { get; set; }
+        public string[] SkipDotnetVersions { get; set; } = [];
+        public string[] NgenDotnetVersions { get; set; } = [];
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace MakeListToNgen.Utils
+﻿namespace ListToNgen.Utils
 {
     internal static class FileSystemInfoUtils
     {

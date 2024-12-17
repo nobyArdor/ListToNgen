@@ -3,9 +3,9 @@ using System.CommandLine.Binding;
 using System.Text;
 using Tomlyn;
 
-namespace MakeListToNgen.Config
+namespace ListToNgen.Config
 {
-    internal class ConfigModelBinder(Option<FileInfo> configPath) : BinderBase<ConfigModel>
+    internal sealed class ConfigModelBinder(Option<FileInfo> configPath) : BinderBase<ConfigModel>
     {
         protected override ConfigModel GetBoundValue(BindingContext bindingContext)
         {
