@@ -38,7 +38,7 @@ namespace ListToNgen.Utils
                 }
 
             }
-            catch (ICSharpCode.Decompiler.Metadata.PEFileNotSupportedException)
+            catch (ICSharpCode.Decompiler.Metadata.MetadataFileNotSupportedException)
             {
                 //simple skip
             }
