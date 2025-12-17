@@ -7,8 +7,8 @@ namespace ListToNgen.Config
         public static void ValidateConfig(ConfigModel model)
         {
 
-            var ngenDotnetVersions = model.NgenDotnetVersions.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
-            var skipDotnetVersions = model.SkipDotnetVersions.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
+            var ngenDotnetVersions = (model.NgenDotnetVersions ?? []).ToFrozenSet(StringComparer.OrdinalIgnoreCase);
+            var skipDotnetVersions = (model.SkipDotnetVersions ?? []).ToFrozenSet(StringComparer.OrdinalIgnoreCase);
             if (!ngenDotnetVersions.Overlaps(skipDotnetVersions)) return;
             var commonElements = string.Join(", ", ngenDotnetVersions.Intersect(skipDotnetVersions));
             throw new InvalidOperationException(
